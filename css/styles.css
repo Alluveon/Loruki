@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+*{ /*setting everything to 0 to square ourselves away*/
+    
+    box-sizing: border-box; /*we're using this bc we dont wanna do border math*/
+    padding:0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2 {
+    font-weight: 300; /*thins it out slightly*/
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+}
+
+img{
+    width: 100%; /*width 100 will keep images within container*/
+}
+
+.navbar {
+    background-color: #047aed;
+    color: #fff;
+    height: 70px; 
+}
+
+.container {
+    max-width: 1100px; /*we are setting the max width and ALSO an automatic margin so it'll stay centered*/
+    margin: 0 auto;
+    overflow: auto;
+}
