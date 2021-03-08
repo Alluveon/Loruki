@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/*desktop first vs. mobile first programming?
+    approach can vary, it seems like.
+    for this we'll style mobile w media queries*/
 
+:root {
+    --primary-color: #047aed; /*if we wanted to change the Main Color, we could change this variable 
+                                    and anything that has this variable will change. neat*/
+}
 
 *{ /*setting everything to 0 to square ourselves away*/
     
@@ -38,13 +45,72 @@ img{
 }
 
 .navbar {
-    background-color: #047aed;
+    background-color: var(--primary-color);
     color: #fff;
     height: 70px; 
 }
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.navbar ul{
+    display: flex;
+
+}
+
+.navbar a{
+    color: #fff;
+    padding:10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover{
+    border-bottom: 2px #fff solid;
+}
+
+/*showcase*/
+
+.showcase {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.showcase h1{
+    font-size: 40px;
+
+}
+
+.showcase p{
+    margin: 20px 0;
+}
+/*utilities - "classes that will be used all around the website"
+ - apparently we're not doing anything much different than a framework? 
+ I guess the framework stuff like Bootstrap speeds it up?*/
 
 .container {
     max-width: 1100px; /*we are setting the max width and ALSO an automatic margin so it'll stay centered*/
     margin: 0 auto;
     overflow: auto;
+    padding: 0 40px;
+}
+
+.flex { /*trying out flexbox. remember it's automatically set to row
+            we're also assigning this to Most of our content, while the nav bar has its own variation*/
+    display: flex; 
+    justify-content: center; /*aligns w main*/
+    align-items: center; /*aligns cross-axis*/
+    height: 100%;
+}
+
+.grid{ /*usually dont use pixels here, usually fractions or %?*/
+     display: grid;
+     /*alternate:grid-template-columns: 1fr 1fr;;*/
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px; /*grid gap*/
+      justify-content: center;
+      align-items: center;
+      height: 100%; /*these three properties together actually "center" the items*/
 }

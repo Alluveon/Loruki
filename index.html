@@ -1,5 +1,8 @@
 <!DOCTYPE html >
 <html lang="en"> <!--used boilerplate ?? define that later-->
+
+<!-- note: this tutorial uses a lot of Bootstrap classes, just something
+to keep in mind for the future i assume we will be seeing these guys again -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -13,7 +16,7 @@
 <body>
     <!-- nav; also trying these emmet abbreviations out since they're here-->
     <div class="navbar">
-        <div class="container">
+        <div class="container flex">
           <h1 class="logo">Loruki.</h1>
 
           <nav>
@@ -27,5 +30,39 @@
           </nav>
         </div>
     </div>
+
+    <!--Showcase -->
+    <section class="showcase"> <!--we can use grid and flex in multiple places, then make
+                                    more specific rules if we need to -->
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>Easier Deployment</h1>
+                <p>Deploy web apps of all kinds, from large initial-scale
+                    enterprise APIs to static websites for individuals.
+                    Fill out the form to try a demo of our platform</p>
+                    <a href="features.html" class="btn btn-outline">Read More</a>
+            </div>
+
+            <div class="showcase-form card">
+                <h2>Request a Demo</h2>
+                <form>
+                    <div class="form-control">
+                        <input type="text" name="name" placeholder="Name" required />
+                    </div>
+
+                    <div class="form-control">
+                        <input type="text" name="company" placeholder="Company Name" required />
+                    </div>
+
+                    <div class="form-control">
+                        <input type="email" name="email" placeholder="Email" required />
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
 </body>
 </html>
