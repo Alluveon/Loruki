@@ -5,7 +5,10 @@
 
 :root {
     --primary-color: #047aed; /*if we wanted to change the Main Color, we could change this variable 
-                                    and anything that has this variable will change. neat*/
+                    and anything that has this variable will change. neat*/
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
 }
 
 *{ /*setting everything to 0 to square ourselves away*/
@@ -144,7 +147,7 @@ img{
 .stats-heading{
     max-width: 500px;
     margin: auto;
-    
+
 }
 
 .stats .grid h3{
@@ -154,4 +157,31 @@ img{
 .stats .grid .p{
     font-size: 20px;
     font-weight: bold;
+}
+
+/*Cloud*/
+
+.cloud .grid{
+    grid-template-columns: 4fr, 3fr;
+}
+
+/*languages*/
+
+.languages .flex {
+    flex-wrap: wrap;
+}
+.languages .card{
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+
+.languages .card h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover{
+    transform: translateY(-15px);
+    
 }
