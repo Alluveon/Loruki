@@ -60,6 +60,11 @@
     background-color: var(--light-color);
 }
 
+.bg-primary a, .btn-primary a,
+.bg-secondary a,.btn-secondary a,
+.bg-dark a, .btn-dark a {
+    color: #fff;
+}
 
 /*text sizes */
 .lead{
@@ -184,15 +189,7 @@ for margin and padding instead of putting them on the elements
     grid-template-columns: repeat(3, 1fr)
 }
 
-.cli .grid{
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
 
-}
-
-/*ok so by using > *first child, it is targeting the first element inside the div w class CLI. 
-even if we change it to something else, it'll always target the first item*/
-.cli .grid > *:first-child { 
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
+.footer p{
+    color: #fff;
 }
