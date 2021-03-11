@@ -101,8 +101,24 @@ for margin and padding instead of putting them on the elements
     padding: 4rem 0;
 }
 
+.p1-{
+    padding: 1rem 0;
+}
 
+.p-2{
+    padding: 1.5rem 0;
+}
 
+.p-3{
+    padding: 2rem 0;
+}
+.p-4{
+    padding: 3rem 0;
+}
+
+.p-5{
+    padding: 4rem 0;
+}
 
 .flex { /*trying out flexbox. remember it's automatically set to row
             we're also assigning this to Most of our content, while the nav bar has its own variation*/
@@ -124,4 +140,17 @@ for margin and padding instead of putting them on the elements
 
 .grid-3{
     grid-template-columns: repeat(3, 1fr)
+}
+
+.cli .grid{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+/*ok so by using > *first child, it is targeting the first element inside the div w class CLI. 
+even if we change it to something else, it'll always target the first item*/
+.cli .grid > *:first-child { 
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
 }
