@@ -33,10 +33,11 @@ a{
     color: #333;
 }
 
+/*
 h1{
     color: #fff;
 }
-
+*/
 h1, h2 {
     font-weight: 300; /*thins it out slightly*/
     line-height: 1.2;
@@ -202,10 +203,31 @@ img{
     
 }
 
+/* features */
+.features-head img {
+    width: 200px;
+    justify-self: flex-end;
+}
+
+.features-sub-head img{
+    width: 300px;
+    justify-items: end;
+    margin-left: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.features-main .card > i{
+    margin-right: 20px;
+}
+
 .footer .social a{
     margin: 0 10px;
 }
 
+.footer h1{
+    color: #fff;
+}
 /*Tablets */
 @media(max-width: 768px) {
     .grid,
