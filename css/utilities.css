@@ -66,6 +66,31 @@
     color: #fff;
 }
 
+
+/*text-colors*/
+
+.text-primary{
+    color: var(--primary-color);
+    
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+
+}
+
+.text-dark {
+    color: var(--dark-color);
+
+}
+
+.text-light {
+    color: var(--light-color);
+}
+
+
+
+
 /*text sizes */
 .lead{
     font-size: 20px;
@@ -149,7 +174,7 @@ for margin and padding instead of putting them on the elements
     padding: 4rem 0;
 }
 
-.p1-{
+.p-1{
     padding: 1rem 0;
 }
 
@@ -168,6 +193,28 @@ for margin and padding instead of putting them on the elements
     padding: 4rem 0;
 }
 
+/*alert*/
+
+.alert {
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.alert i {
+    margin-right: 10px;
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    color: #fff;
+}
+
+.alert-error {
+    background-color: var(--failure-color);
+    color: #fff;
+}
 .flex { /*trying out flexbox. remember it's automatically set to row
             we're also assigning this to Most of our content, while the nav bar has its own variation*/
     display: flex; 
