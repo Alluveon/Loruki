@@ -93,13 +93,14 @@
 
 /*functionally its not much different than making our own framework*/
 .p-1 {
-    margin: 1rem 0; /*REM is a multiplier of the root element font-size 
+    padding: 1rem 0; /*REM is a multiplier of the root element font-size 
                     ex 1rem=16px */ 
 }                   /*you can also do this with padding and x-axis*/
 
 .p-2{
-    margin: 1.5rem 0;
+    padding: 1.5rem 0;
 }
+
 
 .my-2{
     margin: 1.5rem 0;

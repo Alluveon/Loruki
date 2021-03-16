@@ -244,6 +244,26 @@ img{
 }
 
 
+/*Docs*/
+.docs-main h3{
+    margin: 20px ;
+
+}
+
+.docs-main nav li{
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    border-bottom: 1px #ccc solid;
+}
+
+.docs-main .grid{
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
+
+/*footer*/
 .footer .social a{
     margin: 0 10px;
 }
